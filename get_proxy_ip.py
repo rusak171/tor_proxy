@@ -92,7 +92,7 @@ if __name__ == '__main__':
     # fut = asyncio.gather(*[get_ip_by_bs(localhost, port, r_exp) for port in range(10025, 10030)])
     #  3) - through regular expression
     # r_exp = re.compile(r'(?<=\<title\>www\.whatip\.org -- Your IP is )'
-    #                    '[\d.]{1,3}.[\d.]{1,3}.[\d.]{1,3}.[\d.]{1,3}(?=\<\/title\>)')
+    #                    '[\d]{1,3}.[\d]{1,3}.[\d]{1,3}.[\d]{1,3}(?=\<\/title\>)')
     # fut = asyncio.gather(*[get_ip_by_re(localhost, port, r_exp) for port in range(10025, 10030)])
     res = loop.run_until_complete(fut)
     loop.close()
