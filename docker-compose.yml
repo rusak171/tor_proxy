@@ -1,0 +1,22 @@
+version: '3'
+services:
+    tor10025:
+        image: torserv:latest
+        ports:
+          - "10025:9050"
+    tor10026:
+        image: torserv:latest
+        ports:
+          - "10026:9050"
+    tor10027:
+        image: torserv:latest
+        ports:
+          - "10027:9050"
+    tor10028:
+        image: torserv:latest
+        ports:
+          - "10028:9050"
+    tor10029:
+        image: torserv:latest
+        ports:
+          - "10029:9050"
